@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Writer Effect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Forum&family=Poppins:wght@200&family=Ubuntu:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            display: flex;
+        }
+        h1{
+            margin: auto;
+            color: aliceblue;
+            text-transform: uppercase;
+            font-family: 'DotGothic16', sans-serif;
+            font-size: 4rem;
+            position: relative;
+        }
+        h1::after{
+            content: "|";
+            color: yellow;
+            position: absolute;
+            right: 0;
+            background-color: black;
+            width: 100%;
+            animation: mv-cursor 6s steps(30) infinite alternate,
+                        line 0.2s infinite;
+        }
+
+        @keyframes mv-cursor{
+
+            100%{
+                width: 0%;
+            }
+        }
+        @keyframes line{
+            50%{
+                color: black;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="msg"> I am a Front End Developer !!!</h1>
+    </div>
+</body>
+</html>

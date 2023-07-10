@@ -1,0 +1,20 @@
+/* syntax 
+selector{
+    property:value;
+} */
+
+
+/* select by element */
+
+
+h1{   
+    color:brown;
+    background-color: beige;
+}
+
+/* select by classname */
+
+
+.para1{
+    
+}
